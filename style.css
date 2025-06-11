@@ -1,0 +1,154 @@
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*NAV*/
+nav {
+  display: flex;
+ /* justify-content: space-between;*/
+  align-items: left;
+}
+
+nav li {
+  display: inline;
+  margin-left: 20px;
+  color: pink;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* INTRO */
+.intro {
+  background: #ffe6f0;
+  text-align: center;
+  padding: 40px 20px;
+}
+.intro img {
+  width: 100px;
+  height: auto;
+
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.intro h1 {
+  font-size: 2.5em;
+  color: #c2185b;
+}
+.intro p {
+  color: #6a1b9a;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+/* ABOUT */
+.about {
+  background-color: #fff0f5;
+  padding: 30px;
+  color: #4a148c;
+  font-size: 1.1em;
+
+  line-height: 1.8;
+}
+.about h1 {
+  color: #880e4f;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.about h3 {
+  font-size: 1.5em;
+  color: #ad1457;
+  margin-bottom: 15px;
+}
+
+/* PRODUCT SECTION */
+.product {
+  background: #fafafa;
+  padding: 40px 20px;
+}
+
+/* BUCKET AND KEYCHAIN STYLES */
+.bucket, .keychain {
+  margin-bottom: 40px;
+}
+.bucket h1, .keychain h1 {
+  font-size: 2em;
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+/* Scrollable image cards */
+.bucket, .keychain {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px 0;
+}
+.bucket img, .keychain img {
+
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #f48fb1;
+}
+.bucket p, .keychain p {
+  text-align: center;
+  font-weight: bold;
+  color: #880e4f;
+}
+
+/* Put images and price in a flex column */
+.bucket img, .keychain img {
+  display: block;
+}
+.bucket img + p, .keychain img + p {
+  margin-top: 4px;
+
+}
+
+/* CONTACT SECTION */
+.contact {
+  background-color: #fce4ec;
+  padding: 40px 20px;
+  text-align: center;
+}
+.contact h3 {
+  font-size: 2em;
+  color: #c2185b;
+  margin-bottom: 20px;
+}
+.contact a {
+  display: inline-block;
+  margin: 8px;
+  text-decoration: none;
+  color: white;
+  background-color: #ec407a;
+
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+.contact a:hover {
+  background-color: #d81b60;
+}
+
+/* FOOTER */
+footer {
+  background: #880e4f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+footer a {
+  color: #ffccbc;
+  text-decoration: none;
+
+}
+footer a:hover {
+  text-decoration: underline;
+}
